@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<h1>Food items to shop! For Cheaper prices!!</h1>
+<ul>
+    {% for food in food %}
+        <h2>{{ food }}</h2>
+    {% endfor %}
+</ul>
